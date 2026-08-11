@@ -1,0 +1,19 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    // Pinned explicitly so the emitted tree is `dist/main.js` and not `dist/src/main.js`.
+    // TypeScript otherwise infers the root from every included file, and the moment tests
+    // sit beside src the output gains a directory level — which silently breaks both the
+    // start script and SqlLoader's `__dirname/sql` lookup.
+    "rootDir": "./src",
+
+    // Off for builds, deliberately. `nest build` deletes outDir but leaves
+    // tsconfig.tsbuildinfo behind, so an incremental compile consults a build log describing
+    // output that no longer exists, decides nothing needs emitting, and exits 0 having
+    // written almost nothing. A production build that silently produces no main.js is far
+    // worse than one that takes a few extra seconds. Watch mode still uses tsconfig.json,
+    // which keeps incremental on.
+    "incremental": false
+  },
+  "exclude": ["node_modules", "dist", "test", "scripts", "**/*.spec.ts"]
+}
