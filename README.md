@@ -561,7 +561,8 @@ VITE_API_URL=https://crossval-assignment.onrender.com/api/v1
 
 ## Live Demo
 
-The application is live at: https://crossval-assignment.onrender.com
+The application is live at: https://crossval-assignment-ui.onrender.com
+The render server closes after inactivity so first we need to make it active (we need to first open this url, once it's working then UI will also be visible): https://crossval-assignment.onrender.com
 
 Use the seeded demo account:
 
