@@ -2,7 +2,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { LayoutDashboard, LogOut, PlusCircle, User, Menu } from 'lucide-react';
 import { useState } from 'react';
 
-import { useAuth } from '@/auth/AuthContext';
+import { useAuth } from '../auth/AuthContext';
 
 interface AppLayoutProps {
   children: React.ReactNode;
