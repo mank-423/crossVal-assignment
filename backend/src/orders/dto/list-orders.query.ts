@@ -1,6 +1,6 @@
 import { Transform, Type } from 'class-transformer';
 import { IsIn, IsInt, IsOptional, IsString, Max, MaxLength, Min } from 'class-validator';
-import { ORDER_STATUSES, type OrderStatus } from '@orders/shared';
+import { ORDER_STATUSES, type OrderStatus } from '../../shared';
 
 export const SORT_KEYS = ['due_date', 'created_at', 'total', 'amount_due'] as const;
 export type SortKey = (typeof SORT_KEYS)[number];

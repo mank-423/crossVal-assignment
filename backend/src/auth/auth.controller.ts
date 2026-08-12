@@ -1,5 +1,5 @@
 import { Body, Controller, Get, HttpCode, HttpStatus, Post, UseGuards } from '@nestjs/common';
-import type { AuthResponse, AuthenticatedUser } from '@orders/shared';
+import type { AuthResponse, AuthenticatedUser } from '../shared';
 
 import { CurrentUser, type RequestUser } from '../common/decorators/current-user.decorator';
 import { AuthService } from './auth.service';

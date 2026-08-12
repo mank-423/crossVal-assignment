@@ -7,7 +7,7 @@ import {
   Logger,
 } from '@nestjs/common';
 import type { Request, Response } from 'express';
-import type { ApiErrorCode, ApiErrorResponse } from '@orders/shared';
+import type { ApiErrorCode, ApiErrorResponse } from '../../shared';
 
 import { AppError } from '../errors/app-error';
 import { ValidationError } from '../errors/validation-error';

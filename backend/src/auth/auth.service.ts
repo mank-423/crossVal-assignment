@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
 import { compare, hash } from 'bcryptjs';
-import type { AuthResponse, AuthenticatedUser } from '@orders/shared';
+import type { AuthResponse, AuthenticatedUser } from '../shared';
 
 import {
   EmailAlreadyRegisteredError,

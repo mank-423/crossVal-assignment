@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import type { OrderStatus } from '@orders/shared';
+import type { OrderStatus } from '../shared';
 
 import { DatabaseService, type SqlExecutor } from '../database/database.service';
 

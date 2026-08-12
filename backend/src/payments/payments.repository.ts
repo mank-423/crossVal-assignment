@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 
 import { DatabaseService, type SqlExecutor } from '../database/database.service';
 
-import type { SettlementKind } from '@orders/shared';
+import type { SettlementKind } from '../shared';
 
 export interface PaymentRow {
   id: number;

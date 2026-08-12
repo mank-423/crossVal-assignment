@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import type { OrderDetail } from '@orders/shared';
+import type { OrderDetail } from '../shared';
 
 import { OrderNotFoundError } from '../common/errors/app-error';
 import { DatabaseService, type SqlExecutor } from '../database/database.service';

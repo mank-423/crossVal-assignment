@@ -1,4 +1,4 @@
-import type { LineItem, OrderEvent, OrderSummary, Payment } from '@orders/shared';
+import type { LineItem, OrderEvent, OrderSummary, Payment } from '../shared';
 
 import type { OrderEventRow } from './order-events.repository';
 import type { LineItemRow, OrderSummaryRow } from './orders.repository';

@@ -8,7 +8,7 @@ import {
   type Payment,
   type RecordPaymentResponse,
   type SettlementKind,
-} from '@orders/shared';
+} from '../shared';
 
 import {
   OrderNotFoundError,

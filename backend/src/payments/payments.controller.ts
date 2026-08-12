@@ -8,7 +8,7 @@ import {
   Post,
   UseGuards,
 } from '@nestjs/common';
-import type { Payment, RecordPaymentResponse } from '@orders/shared';
+import type { Payment, RecordPaymentResponse } from '../shared';
 
 import { CurrentUser, type RequestUser } from '../common/decorators/current-user.decorator';
 import { JwtAuthGuard } from '../auth/jwt-auth.guard';

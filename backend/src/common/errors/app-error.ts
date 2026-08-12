@@ -1,5 +1,5 @@
 import { HttpException, HttpStatus } from '@nestjs/common';
-import type { ApiErrorCode } from '@orders/shared';
+import type { ApiErrorCode } from '../../shared';
 
 export interface AppErrorOptions {
   code: ApiErrorCode;

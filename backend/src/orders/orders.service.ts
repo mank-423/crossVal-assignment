@@ -10,7 +10,7 @@ import {
   type Paginated,
   type StatusBucket,
   ORDER_STATUSES,
-} from '@orders/shared';
+} from '../shared';
 
 import { AppError, OrderLockedError, OrderNotFoundError } from '../common/errors/app-error';
 import { DatabaseService } from '../database/database.service';
@@ -239,7 +239,7 @@ export class OrdersService {
   async summary(userId: number): Promise<DashboardSummary> {
     const rows = await this.orders.dashboardSummary(userId);
 
-    const byStatus: StatusBucket[] = ORDER_STATUSES.map((status) => {
+    const byStatus: StatusBucket[] = ORDER_STATUSES.map((status: any) => {
       const row = rows.find((candidate) => candidate.status === status);
       return {
         status,

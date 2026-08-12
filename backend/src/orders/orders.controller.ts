@@ -12,7 +12,7 @@ import {
   Query,
   UseGuards,
 } from '@nestjs/common';
-import type { DashboardSummary, OrderDetail, OrderSummary, Paginated } from '@orders/shared';
+import type { DashboardSummary, OrderDetail, OrderSummary, Paginated } from '../shared';
 
 import { CurrentUser, type RequestUser } from '../common/decorators/current-user.decorator';
 import { JwtAuthGuard } from '../auth/jwt-auth.guard';

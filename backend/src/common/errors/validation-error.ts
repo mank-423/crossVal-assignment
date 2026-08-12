@@ -1,6 +1,6 @@
 import { HttpException, HttpStatus } from '@nestjs/common';
 import type { ValidationError as ClassValidatorError } from 'class-validator';
-import type { ApiErrorCode } from '@orders/shared';
+import type { ApiErrorCode } from '../../shared';
 
 /**
  * A failed DTO validation, flattened into per-field messages.

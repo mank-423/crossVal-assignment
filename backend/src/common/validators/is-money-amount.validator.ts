@@ -5,7 +5,7 @@ import {
   ValidatorConstraint,
   ValidatorConstraintInterface,
 } from 'class-validator';
-import { MAX_AMOUNT_CENTS, toCents } from '@orders/shared';
+import { MAX_AMOUNT_CENTS, toCents } from '../../shared';
 
 export interface MoneyAmountOptions {
   /** Smallest accepted value, in cents. Defaults to 0. */
