@@ -151,7 +151,7 @@ export function HomePage() {
                     <div className="flex items-center gap-4">
                         <Link
                             to="/signin"
-                            className="hidden font-mono text-sm transition-colors hover:opacity-70 md:block border border-2 rounded-sm p-2"
+                            className="hidden font-mono text-sm transition-colors hover:opacity-70 md:block border-2 rounded-sm p-2"
                             style={{ color: MUTED_ON_PAPER }}
                         >
                             Sign in
