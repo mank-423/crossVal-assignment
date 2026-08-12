@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
-import { formatMoney, type OrderDetail, type OrderEvent } from '@orders/shared';
+import { formatMoney, type OrderDetail, type OrderEvent } from '../shared';
 
 import { ordersApi } from '../api/endpoints';
 import { ErrorBanner } from '../components/ErrorBanner';

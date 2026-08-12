@@ -1,4 +1,4 @@
-import { formatMoney } from '@orders/shared';
+import { formatMoney } from '../shared';
 
 interface Props {
   cents: number;

@@ -1,4 +1,4 @@
-import type { ApiErrorCode, ApiErrorResponse } from '@orders/shared';
+import type { ApiErrorCode, ApiErrorResponse } from '../shared';
 
 /**
  * In development, Vite proxies /api to the API process, so the browser sees one origin and

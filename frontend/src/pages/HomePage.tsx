@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { BarChart3, CheckCircle2, FileText, MessageCircle, Shield, Users, Zap, Menu } from 'lucide-react';
 
-import { Button } from '@/components/ui/button';
+import { Button } from '../components/ui/button';
 
 const INK = '#10192B';
 const PAPER = '#F6F2E8';

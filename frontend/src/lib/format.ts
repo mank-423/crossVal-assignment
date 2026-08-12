@@ -1,4 +1,4 @@
-import { todayIsoDate, type OrderStatus } from '@orders/shared';
+import { todayIsoDate, type OrderStatus } from '../shared';
 
 /**
  * `YYYY-MM-DD` rendered for a human.

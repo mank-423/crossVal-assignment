@@ -14,17 +14,10 @@ import type {
   SignInRequest,
   SignUpRequest,
   UpdateOrderRequest,
-} from '@orders/shared';
+} from '../shared';
 
 import { apiFetch } from './client';
 
-/**
- * One function per endpoint, typed with the shared contract.
- *
- * Request and response types come from `@orders/shared`, which the API also compiles
- * against, so a change to the contract fails this build rather than showing up as an
- * undefined field at runtime.
- */
 
 export const authApi = {
   signUp: (body: SignUpRequest) => apiFetch<AuthResponse>('/auth/signup', { method: 'POST', body }),

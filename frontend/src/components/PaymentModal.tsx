@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
-import { centsToDecimalString, formatMoney, toCents, type OrderDetail } from '@orders/shared';
+import { centsToDecimalString, formatMoney, toCents, type OrderDetail } from '../shared';
 
 import { ApiError } from '../api/client';
 import { paymentsApi } from '../api/endpoints';

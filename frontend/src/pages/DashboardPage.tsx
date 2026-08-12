@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { keepPreviousData, useQuery } from '@tanstack/react-query';
-import { ORDER_STATUSES, ORDER_STATUS_LABELS, type OrderStatus } from '@orders/shared';
+import { ORDER_STATUSES, ORDER_STATUS_LABELS, type OrderStatus } from '../shared';
 
 import { ordersApi } from '../api/endpoints';
 import { ErrorBanner } from '../components/ErrorBanner';
@@ -115,7 +115,7 @@ export function DashboardPage() {
 }
 
 // OrdersTable component
-function OrdersTable({ rows }: { rows: import('@orders/shared').OrderSummary[] }) {
+function OrdersTable({ rows }: { rows: import('../shared').OrderSummary[] }) {
   return (
     <div className="overflow-x-auto">
       <table className="w-full text-sm">

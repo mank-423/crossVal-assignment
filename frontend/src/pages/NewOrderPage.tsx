@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
-import { formatMoney, toCents } from '@orders/shared';
+import { formatMoney, toCents } from '../shared';
 
 import { ApiError } from '../api/client';
 import { ordersApi } from '../api/endpoints';

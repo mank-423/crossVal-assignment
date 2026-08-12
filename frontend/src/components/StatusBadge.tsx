@@ -1,4 +1,4 @@
-import { ORDER_STATUS_LABELS, type OrderStatus } from '@orders/shared';
+import { ORDER_STATUS_LABELS, type OrderStatus } from '../shared';
 
 const STYLES: Record<OrderStatus, { bg: string; text: string; ring: string }> = {
   pending: { bg: '#DCD3BE', text: '#10192B', ring: '#DCD3BE' },

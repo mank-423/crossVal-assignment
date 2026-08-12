@@ -1,4 +1,4 @@
-import type { DashboardSummary } from '@orders/shared';
+import type { DashboardSummary } from '../shared';
 import { Money } from './Money';
 
 interface Props {

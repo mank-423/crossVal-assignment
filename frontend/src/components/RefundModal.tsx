@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
-import { formatMoney, toCents, type OrderDetail } from '@orders/shared';
+import { formatMoney, toCents, type OrderDetail } from '../shared';
 
 import { paymentsApi } from '../api/endpoints';
 import { ErrorBanner } from './ErrorBanner';

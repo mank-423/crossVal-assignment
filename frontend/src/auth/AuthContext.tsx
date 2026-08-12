@@ -1,6 +1,6 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from 'react';
 import { useQueryClient } from '@tanstack/react-query';
-import type { AuthenticatedUser } from '@orders/shared';
+import type { AuthenticatedUser } from '../shared';
 
 import { ApiError, getStoredToken, storeToken } from '../api/client';
 import { authApi } from '../api/endpoints';
