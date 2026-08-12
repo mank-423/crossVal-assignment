@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, BarChart3, CheckCircle2, FileText, MessageCircle, Shield, Users, Zap, Menu } from 'lucide-react';
+import { BarChart3, CheckCircle2, FileText, MessageCircle, Shield, Users, Zap, Menu } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
 
